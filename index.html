@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <title>Халиков Раян — резюме</title>
+  <style>
+    :root { color-scheme: light; --text: #171717; --muted: #727272; --line: #dedede; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fff; color: var(--text); font: 15px/1.48 Arial, Helvetica, sans-serif; }
+    .resume { position: relative; width: min(100%, 900px); margin: 0 auto; padding: 52px 58px 30px; }
+    .brand { position: absolute; top: 42px; right: 58px; width: 52px; height: 52px; display: grid; place-items: center; border-radius: 50%; background: #f00000; color: #fff; font: bold 35px/1 Arial, sans-serif; letter-spacing: -3px; padding-right: 3px; text-decoration: none; }
+    h1 { margin: 0 80px 3px 0; font-size: 29px; line-height: 1.2; font-weight: 700; }
+    p { margin: 0; }
+    .gender { margin-top: 8px; }
+    .contacts { margin-top: 23px; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid #555; outline-offset: 4px; }
+    .location { margin-top: 23px; }
+    .location p + p { margin-top: 3px; }
+    section { margin-top: 29px; }
+    h2 { margin: 0 0 17px; padding-bottom: 6px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 17px; font-weight: 400; line-height: 1.35; }
+    h3 { margin: 0 0 15px; font-size: 25px; line-height: 1.25; }
+    .specializations { margin: 0 0 16px; }
+    .specializations ul { list-style: none; padding: 0; margin: 0; }
+    .specializations li::before { content: '— '; }
+    .conditions p + p { margin-top: 3px; }
+    .commute { margin-top: 14px; }
+    .detail { display: grid; grid-template-columns: 165px 1fr; column-gap: 22px; margin: 0; }
+    dt { color: var(--muted); }
+    dd { margin: 0; }
+    footer { margin-top: 66px; padding-top: 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+    @media (max-width: 600px) {
+      .resume { padding: 30px 22px 25px; }
+      .brand { top: 26px; right: 22px; width: 44px; height: 44px; font-size: 30px; }
+      h1 { font-size: 26px; margin-right: 55px; }
+      h3 { font-size: 23px; }
+      .detail { grid-template-columns: 120px 1fr; gap: 14px; }
+      footer { margin-top: 45px; }
+    }
+    @page { size: A4; margin: 16mm; }
+    @media print {
+      body { font-size: 11pt; }
+      .resume { width: 100%; padding: 0; margin: 0; }
+      .brand { top: 0; right: 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      h1 { font-size: 23pt; }
+      h2 { font-size: 13pt; }
+      h3 { font-size: 18pt; }
+      section { break-inside: avoid; }
+      footer { margin-top: 45px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume" aria-label="Резюме Халикова Раяна">
+    <div class="brand" aria-label="hh">hh</div>
+    <header>
+      <h1>Халиков Раян</h1>
+      <p class="gender">Мужчина</p>
+      <div class="contacts"><p><a href="tel:+79397339974">+7&nbsp;(939)&nbsp;7339974</a> — предпочитаемый способ связи</p></div>
+      <div class="location">
+        <p>Проживает: Мытищи (Московская область)</p>
+        <p>Гражданство: Россия, есть разрешение на работу: Россия</p>
+        <p>Не готов к переезду, не готов к командировкам</p>
+      </div>
+    </header>
+    <section aria-labelledby="position-heading">
+      <h2 id="position-heading">Желаемая должность и зарплата</h2>
+      <h3>Начинающий специалист</h3>
+      <div class="specializations"><p>Специализации:</p><ul><li>Другое</li></ul></div>
+      <div class="conditions">
+        <p>Тип занятости: полная занятость</p>
+        <p>Формат работы: на месте работодателя</p>
+      </div>
+      <p class="commute">Желательное время в пути до работы: не имеет значения</p>
+    </section>
+    <section aria-labelledby="education-heading">
+      <h2 id="education-heading">Образование</h2>
+      <dl class="detail"><dt>Уровень</dt><dd>Среднее образование</dd></dl>
+    </section>
+    <section aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Навыки</h2>
+      <dl class="detail"><dt>Знание языков</dt><dd>Русский — Родной</dd></dl>
+    </section>
+    <footer>Резюме обновлено <time datetime="2025-12-04T21:07">4 декабря 2025 в 21:07</time></footer>
+  </main>
+</body>
+</html>
